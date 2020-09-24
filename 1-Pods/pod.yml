@@ -2,20 +2,10 @@
 apiVersion: v1 #version of the API to use
 kind: Pod #What kind of object we're deploying
 metadata: #information about our object we're deploying
-  name: nginx-pod
+  name: mono-pod
 spec: #specifications for our object
   containers:
-  - name: nginx-container #the name of the container within the pod
-    image: nginx #which container image should be pulled
-    ports:
-    - containerPort: 80 #the port of the container within the pod
-apiVersion: v1 #version of the API to use
-kind: Pod #What kind of object we're deploying
-metadata: #information about our object we're deploying
-  name: nginx-pod
-spec: #specifications for our object
-  containers:
-  - name: nginx-container #the name of the container within the pod
-    image: nginx #which container image should be pulled
+  - name: mono-container #the name of the container within the pod
+    image: mono #which container image should be pulled
     ports:
     - containerPort: 80 #the port of the container within the pod
