@@ -16,6 +16,6 @@ spec: #specifications for our object
     spec:
       containers:
       - name: php-container #the name of the container within the pod
-        image: php-zendserver #which container image should be pulled
+        image: php-zendserver #which container image should be pulled sd
         ports:
         - containerPort: 80 #the port of the container within the pod
